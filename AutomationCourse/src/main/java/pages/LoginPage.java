@@ -22,14 +22,14 @@ public LoginPage(WebDriver driver)
 
 
 
-public void enterUsernameOnUsernameField()
+public void enterUsernameOnUsernameField(String usernameValue)
 {
-	username.sendKeys("standard_user");
+	username.sendKeys(usernameValue);
 }
 
-public void enterPasswordOnPasswordField()
+public void enterPasswordOnPasswordField(String passwordValue)
 {
-	password.sendKeys("secret_sauce");
+	password.sendKeys(passwordValue);
 }
 
 public void clickOnLoginButton()

@@ -1,7 +1,11 @@
 package seleniumBasics;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebElementCommands extends Base
 {
@@ -14,6 +18,11 @@ public class WebElementCommands extends Base
 		WebElement showmessagebutton=driver.findElement(By.xpath("//button[@id='button-one']"));
 		System.out.println(showmessagebutton.isDisplayed());
 		System.out.println(showmessagebutton.isEnabled());
+		
+		//applying explicit wait
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.elementToBeClickable(showmessagebutton));
+		
 		showmessagebutton.click();
 		messagefield.clear();
 		System.out.println(showmessagebutton.getCssValue("background-color"));

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-18T10:25:49 IST" name="Default suite" finished-at="2025-03-18T10:26:08 IST" duration-ms="18946">
+    <groups>
+    </groups>
+    <test started-at="2025-03-18T10:25:49 IST" name="Default test" finished-at="2025-03-18T10:26:08 IST" duration-ms="18946">
+      <class name="seleniumBasics.LoginTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:25:49 IST" name="initialiseBrowser" finished-at="2025-03-18T10:25:55 IST" duration-ms="6407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyWhetherUserCanLoginWithValidCredentials()[pri:1, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:25:55 IST" name="verifyWhetherUserCanLoginWithValidCredentials" description="Verify whether user is able to successfully login with valid credentials" finished-at="2025-03-18T10:26:00 IST" duration-ms="4790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserCanLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverCloseAndQuit()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:00 IST" name="driverCloseAndQuit" finished-at="2025-03-18T10:26:00 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverCloseAndQuit -->
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:00 IST" name="initialiseBrowser" finished-at="2025-03-18T10:26:02 IST" duration-ms="1709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyWhetherUserCanLoginWithValidUsernameAndInvalidPassword()[pri:2, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:02 IST" name="verifyWhetherUserCanLoginWithValidUsernameAndInvalidPassword" description="Verify whether user is able to login with valid username and invalid password" finished-at="2025-03-18T10:26:03 IST" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserCanLoginWithValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="driverCloseAndQuit()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:03 IST" name="driverCloseAndQuit" finished-at="2025-03-18T10:26:03 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverCloseAndQuit -->
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:03 IST" name="initialiseBrowser" finished-at="2025-03-18T10:26:05 IST" duration-ms="1687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyWhetherUserCanLoginWithInvalidCredentials()[pri:3, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:05 IST" name="verifyWhetherUserCanLoginWithInvalidCredentials" description="Verify whether user is able to login with invalid credentials" finished-at="2025-03-18T10:26:05 IST" duration-ms="526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserCanLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="driverCloseAndQuit()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:05 IST" name="driverCloseAndQuit" finished-at="2025-03-18T10:26:06 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverCloseAndQuit -->
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:06 IST" name="initialiseBrowser" finished-at="2025-03-18T10:26:07 IST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyWhetherUserCanLoginWithInvalidUsernameAndValidPassword()[pri:4, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:07 IST" name="verifyWhetherUserCanLoginWithInvalidUsernameAndValidPassword" description="Verify whether user is able to login with invalid username and valid password" finished-at="2025-03-18T10:26:08 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserCanLoginWithInvalidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="driverCloseAndQuit()[pri:0, instance:seleniumBasics.LoginTest@799f10e1]" started-at="2025-03-18T10:26:08 IST" name="driverCloseAndQuit" finished-at="2025-03-18T10:26:08 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverCloseAndQuit -->
+      </class> <!-- seleniumBasics.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

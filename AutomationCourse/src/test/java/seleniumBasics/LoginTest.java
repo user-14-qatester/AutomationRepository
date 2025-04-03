@@ -1,50 +1,56 @@
 package seleniumBasics;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+import utilities.ExcelUtility;
 
 public class LoginTest extends TestNgBase
 {
 
-	@Test(description="Verify whether user is able to successfully login with valid credentials")
-	public void verifyWhetherUserCanLoginWithValidCredentials()
+	@Test(description="Verify whether user is able to successfully login with valid credentials",priority=1)
+	public void verifyWhetherUserCanLoginWithValidCredentials() throws IOException
 	{
+		String usernameValue=ExcelUtility.getStringdata(0, 0, "LoginPage");
+		String passwordValue=ExcelUtility.getStringdata(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
-		login.enterUsernameOnUsernameField();
-		login.enterPasswordOnPasswordField();
+		login.enterUsernameOnUsernameField(usernameValue);
+		login.enterPasswordOnPasswordField(passwordValue);
 	    login.clickOnLoginButton();
 	}
-	@Test(description="Verify whether user is able to login with valid username and invalid password")
-	public void verifyWhetherUserCanLoginWithValidUsernameAndInvalidPassword()
+	@Test(description="Verify whether user is able to login with valid username and invalid password",priority=2)
+	public void verifyWhetherUserCanLoginWithValidUsernameAndInvalidPassword() throws IOException
 	{
-		WebElement username=driver.findElement(By.xpath("//input[@id='user-name']"));
-		username.sendKeys("standard_user");
-		WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys("secret123");
-		WebElement loginButton=driver.findElement(By.xpath("//input[@id='login-button']"));
-		loginButton.click();
+		String usernameValue=ExcelUtility.getStringdata(1, 0, "LoginPage");
+		String passwordValue=ExcelUtility.getStringdata(1, 1, "LoginPage");
+		LoginPage login=new LoginPage(driver);
+		login.enterUsernameOnUsernameField(usernameValue);
+		login.enterPasswordOnPasswordField(passwordValue);
+	    login.clickOnLoginButton();
 	}
-	@Test(description="Verify whether user is able to login with invalid username and valid password")
-	public void verifyWhetherUserCanLoginWithInvalidUsernameAndValidPassword()
+	@Test(description="Verify whether user is able to login with invalid username and valid password",priority=4)
+	public void verifyWhetherUserCanLoginWithInvalidUsernameAndValidPassword() throws IOException
 	{
-		WebElement username=driver.findElement(By.xpath("//input[@id='user-name']"));
-		username.sendKeys("user");
-		WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys("secret_sauce");
-		WebElement loginButton=driver.findElement(By.xpath("//input[@id='login-button']"));
-		loginButton.click();
+		
+		String usernameValue=ExcelUtility.getStringdata(2, 0, "LoginPage");
+		String passwordValue=ExcelUtility.getStringdata(2, 1, "LoginPage");
+		LoginPage login=new LoginPage(driver);
+		login.enterUsernameOnUsernameField(usernameValue);
+		login.enterPasswordOnPasswordField(passwordValue);
+	    login.clickOnLoginButton();
 	}
-	@Test(description="Verify whether user is able to login with invalid credentials")
-	public void verifyWhetherUserCanLoginWithInvalidCredentials()
+	@Test(description="Verify whether user is able to login with invalid credentials",priority=3)
+	public void verifyWhetherUserCanLoginWithInvalidCredentials() throws IOException
 	{
-		WebElement username=driver.findElement(By.xpath("//input[@id='user-name']"));
-		username.sendKeys("user");
-		WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys("secret");
-		WebElement loginButton=driver.findElement(By.xpath("//input[@id='login-button']"));
-		loginButton.click();	
+		String usernameValue=ExcelUtility.getStringdata(3, 0, "LoginPage");
+		String passwordValue=ExcelUtility.getStringdata(3, 1, "LoginPage");
+		LoginPage login=new LoginPage(driver);
+		login.enterUsernameOnUsernameField(usernameValue);
+		login.enterPasswordOnPasswordField(passwordValue);
+	    login.clickOnLoginButton();	
 	}
 }
